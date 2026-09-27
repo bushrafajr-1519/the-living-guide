@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Living Guide | Food, Health, Beauty, Travel & Lifestyle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f6f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            text-align: center;
+            padding: 35px 20px 25px;
+            border-bottom: 1px solid #e5e1da;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #777;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            padding: 16px 20px;
+            border-bottom: 1px solid #e5e1da;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a46b55;
+        }
+
+        .hero {
+            max-width: 1150px;
+            margin: 45px auto;
+            padding: 65px 30px;
+            text-align: center;
+            background: #e9ded3;
+            border-radius: 18px;
+        }
+
+        .hero h2 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #3c3530;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #625a54;
+            font-size: 17px;
+        }
+
+        .section {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #3c3530;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        .category {
+            background: white;
+            padding: 25px 10px;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #444;
+            border: 1px solid #eee8e1;
+            transition: 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .category span {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #eee8e1;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card-image {
+            height: 190px;
+            background: #ddd2c8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card-content small {
+            color: #a46b55;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            margin: 10px 0;
+            color: #3c3530;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #a46b55;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 70px;
+            background: #3c3530;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h2 {
+            font-family: Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Living Guide</h1>
+        <p>IDEAS FOR A BETTER EVERYDAY LIFE</p>
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="write-for-us.html">Write for Us</a>
+</nav>
+ef="#">Lifestyle</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to The Living Guide</h2>
+        <p>
+            Discover helpful ideas, inspiring stories, practical tips,
+            and useful guides for everyday living.
+        </p>
+    </section>
+
+    <section class="section">
+
+        <h2 class="section-title">Explore Categories</h2>
+
+        <div class="categories">
+
+            <a href="#" class="category">
+                <span>🍽️</span>
+                Food
+            </a>
+
+            <a href="#" class="category">
+                <span>🌿</span>
+                Health
+            </a>
+
+            <a href="#" class="category">
+                <span>✨</span>
+                Beauty
+            </a>
+
+            <a href="#" class="category">
+                <span>✈️</span>
+                Travel
+            </a>
+
+            <a href="#" class="category">
+                <span>🏡</span>
+                Lifestyle
+            </a>
+
+            <a href="#" class="category">
+                <span>💡</span>
+                Tips
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2 class="section-title">Latest Articles</h2>
+
+        <div class="articles">
+
+            <article class="card">
+
+                <div class="card-image">🍓</div>
+
+                <div class="card-content">
+
+                    <small>FOOD</small>
+
+                    <h3>
+                        Simple Ideas for Making Everyday Meals Better
+                    </h3>
+
+                    <p>
+                        Discover easy ideas and practical tips
+                        for enjoyable everyday meals.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read Article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-image">🌿</div>
+
+                <div class="card-content">
+
+                    <small>HEALTH</small>
+
+                    <h3>
+                        Simple Habits for a Healthier Lifestyle
+                    </h3>
+
+                    <p>
+                        Explore simple everyday habits that can
+                        support a balanced lifestyle.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read Article →
+                   <article class="card">
+
+    <div class="card-image">🌿</div>
+
+    <div class="card-content">
+
+        <small>LIFESTYLE</small>
+
+        <h3>
+            Simple Ways to Create a More Peaceful Everyday Life
+        </h3>
+
+        <p>
+            Discover simple and practical ways to create a calmer
+            and more peaceful everyday life.
+        </p>
+
+        <a href="articles/first-article.html" class="read-more">
+            Read Article →
+        </a>
+
+    </div>
+
+</article>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>The Living Guide</h2>
+
+        <p>
+            Food • Health • Beauty • Travel • Lifestyle
+        </p>
+
+        <p style="margin-top:15px;">
+            © 2026 The Living Guide. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -128,7 +128,7 @@
     <article>
 
         <div class="category">Lifestyle</div>
-
+        <img id="featured-image" src="" alt="Peaceful everyday life">
         <h1>Simple Ways to Create a More Peaceful Everyday Life</h1>
 
         <p class="date">September 2026</p>
@@ -207,5 +207,14 @@
     © 2026 The Living Guide. All rights reserved.
 </footer>
 
+<script>
+fetch("content/first-article.json")
+    .then(response => response.json())
+    .then(article => {
+        if (article.image) {
+            document.getElementById("featured-image").src = article.image;
+        }
+    });
+</script>
 </body>
 </html>

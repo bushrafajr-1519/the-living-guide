@@ -9,11 +9,13 @@ public_folder: "/images/uploads"
 collections:
   - name: "articles"
     label: "Articles"
-    folder: ""
-    create: true
-    extension: "html"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - name: "first-article"
+        label: "First Article"
+        file: "content/first-article.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+          - { label: "Featured Image", name: "image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
